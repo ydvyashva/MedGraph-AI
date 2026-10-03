@@ -1,17 +1,48 @@
-*.txt
-dataset
-dataset_paper
-dataset_test
-test*
-.dockerignore
-app.sh
+# Environment variables
+.env
+.env.*
+!.env.example
 
-### Python template
-# Byte-compiled / optimized / DLL files
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Node
+node_modules/
+npm-debug.log*
+dist/
+build/
 
-# ignore special files or folds
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Large/generated data
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# Vector databases
+chroma/
+chroma_db/
+vectorstore/
+
+# Temporary files
+tmp/
+temp/
